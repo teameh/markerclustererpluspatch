@@ -253,6 +253,9 @@ ClusterIcon.prototype.show = function () {
       img += "clip: rect(" + (-1 * spriteV) + "px, " + ((-1 * spriteH) + this.width_) + "px, " +
           ((-1 * spriteV) + this.height_) + "px, " + (-1 * spriteH) + "px);";
     }
+    else {
+    	img += "width: " + this.width_ + "px;" + "height: " + this.height_ + "px;";
+    }
     img += "'>";
     this.div_.innerHTML = img + "<div style='" +
         "position: absolute;" +
